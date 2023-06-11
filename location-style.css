@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=DM+Sans&family=Space+Grotesk&display=swap');
+
+body{
+    background-image: url(./Images/Star\ BG\ in\ UI.png),url(./Images/Star\ BG\ in\ UI.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #121212;
+}
+
+a{
+    text-decoration: none;
+}
+
+*{
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.main{
+    height: max-content;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.363),rgba(0, 0, 0, 0));
+}
+
+
+.nav-desk{
+    padding: 2rem 0 2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-desk > section{
+    padding: 0 0 0 4.5rem;
+}
+
+.navlink{
+    margin: 0 1.6rem 0 0;
+}
+
+.navbtn{
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: transparent;
+    border: transparent;
+    font-size: 17px;
+    padding: 10px;
+}
+
+.navbtn-cur{
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: transparent;
+    position: relative;
+    border: transparent;
+    font-size: 17px;
+}
+
+.navbtn-cur::before {
+    background: white;
+    width: 3px;
+    height: 3px;
+    content: " ";
+    position: absolute;
+    top:25px;
+    left: 50%;
+    margin-left:-2.5px;
+    display: inline-block;
+    border-radius: 60%;
+  }
+
+.location-section{
+    margin: 10rem 0 0 0;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.map{
+    border-radius:10px ;
+}
+
+.lap-text-section{
+    margin: 6rem 0rem 0 0;
+    width: 27rem;
+    text-align: left; 
+}
+
+.mob-text-section{
+    display: none;
+    margin: 3.5rem 0rem 0 0;
+    width: 27rem;
+    text-align: left; 
+}
+
+
+.location-text{
+    font-size: 2.8rem;
+    padding: 2rem 0 0 0; 
+    font-family:'Amatic SC', cursive ;
+    font-weight: 300;
+}
+.busbtn{
+    border-radius: 2.97px;
+    border: white solid 1px;
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+    padding: 12px 40px 12px 40px;
+    margin: 4rem 0 4rem 0 ;
+    font-family:'Space Grotesk';
+}
+
+.ham-btn{
+    display: none;
+    margin: 0 2.5rem 0 0;
+    padding: 0 5px 0 5px;
+    background: transparent;
+    border: transparent;
+}
+
+.menu{
+    display: none;
+}
+
+.cross-btn{
+    background: transparent;
+    border: transparent;
+    float: right;
+    margin: 1.6rem;
+}
+
+.nav-mobile{
+    margin-left: 1rem;
+}
+
+.nav-mobile-btn{
+    font-size: large;
+    color: rgba(255, 255, 255, 0.521);
+    text-decoration: none;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.nav-mobile-active{
+    font-size: large;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+footer{
+    background-color: black;
+    font-family: 'DM Sans' , sans-serif;
+    
+}
+
+.foot-div{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0 0 2rem ;
+}
+
+.foot-text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-media{
+    margin-top: 26px;
+}
+
+.social-media > img{
+    margin-right: 23px;
+}
+
+.foot-link > a{
+    color: #9B9B9B;
+}
+
+.text-social-section{
+    padding-top: 3rem;
+}
+
+.foot-link{
+    margin-right: 135px;
+}
+
+@media only screen and (max-width: 1200px){
+
+
+    .foot-div{
+        display: block;
+        /* padding: 0 0 0 0; */
+    }
+
+    .foot-text{
+        margin-top: 5rem;
+    }
+
+    .social-media > img{
+        margin-right: 23px;
+    }
+
+    .text-social-section{
+        padding: 0 0 0 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .social-media{
+        margin-right: 1rem;
+    }
+
+    /* .footer-svce-logo{
+        padding: 0 0 0 0;
+    } */
+}
+
+
+@media only screen and (max-width: 887px) {
+    .main{
+        margin-top: 0;
+        /* height: min-content; */
+    }
+
+    .nav-desk{
+        margin-bottom: 0rem;
+    }
+    nav{
+        padding: 2rem 0 0 1.5rem;
+    }
+    nav > section{
+        display: none;
+    }
+
+    .ham-btn{
+        display: block;
+    }
+
+    .menu{
+        display: block;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0.2s, opacity 0.2s ease-out;
+        float: right;
+        background-color: black;
+        width: 70%;
+        position:absolute;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .location-text{
+        margin-top: 0rem;
+        padding-top: 0rem ;
+    }
+    .location-section{
+        margin: 1.5rem 0 0px 0;
+        display: block;
+    }
+
+    .lap-text-section{
+        display: none;
+    }
+
+    .mob-text-section{
+        display: block;
+        width: 17rem;
+        margin: 0 0 3rem 0rem;
+    }
+
+    .busbtn{
+        margin: 3rem 0 3rem 0rem;
+    }
+
+    footer{
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+
+    .twitter,.facebook{
+        display: none;
+    }
+
+    .footer-svce-logo{
+        width: 220px;
+    }
+
+    .foot-div{
+        padding: 1rem 0rem 0 1rem ;
+    }
+
+    .foot-link{
+        margin-right: 2rem;
+    }
+
+    .social-media > img{
+        margin-right: 15px;
+    }
+
+    .text-social-section{
+        padding-right: 0;
+    }
+}
+
+@media only screen and (max-width: 396px){
+    .foot-link{
+        margin-right:0rem ;
+        margin-left: 0;
+    }
+
+    .social-media > img{
+        margin-right: 3px;
+    }
+
+    .footer-svce-logo{
+        width: 180px;
+    }
+    .foot-div{
+        margin-right: 1rem;
+    }
+    .map{
+        width: 280px;
+    }
+    .social-media{
+        margin-right: 0px;
+    }
+    .text-social-section > section > p{
+        font-size: smaller;
+    }
+}

@@ -1,0 +1,265 @@
+@font-face {
+    font-family: Mars;
+    src: url(./Fonts/Mars.ttf);
+}
+
+@font-face {
+    font-family: 'Mars Bold';
+    src: url(./Fonts/Mars\ Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Mars Thin';
+    src: url(./Fonts/Mars\ Thin.ttf);
+}
+
+@keyframes component {
+    0%   {top:0px;}
+    50% {margin-top: 26px}
+    100%   {top:0px;}
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+body{
+    background: url(./Images/Star\ BG\ in\ UI.png) no-repeat center center / cover,url(./Images/Star\ BG\ in\ UI.png) no-repeat center center / cover,url(./Images/Main\ BG.png) no-repeat center center / cover,url(./Images/Main\ BG.png) no-repeat center center / cover,url(./Images/Main\ BG.png) no-repeat center center / cover,url(./Images/Main\ BG.png) no-repeat center center / cover, url(./Images/flare.png) no-repeat center,url(./Images/Nebula\ GIF.gif) no-repeat center center / cover;
+    background-repeat: no-repeat;
+    background-size:center cover;
+    /* background-position: ; */
+    height:100vh;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+*{
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.main{
+    height: 100vh;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.199),rgba(0, 0, 0, 0.226));
+}
+
+
+.nav-desk{
+    padding: 2rem 0 0 4.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-desk > section{
+    padding: 0 0 0 4.5rem;
+}
+
+.navlink{
+    margin: 0 1.6rem 0 0;
+}
+
+.navbtn{
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: transparent;
+    border: transparent;
+    font-size: 17px;
+    padding: 10px;
+}
+
+.navbtn-cur{
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: transparent;
+    position: relative;
+    border: transparent;
+    font-size: 17px;
+}
+
+.navbtn-cur::before {
+    background: white;
+    width: 3px;
+    height: 3px;
+    content: " ";
+    position: absolute;
+    top:25px;
+    left: 50%;
+    margin-left:-2.5px;
+    display: inline-block;
+    border-radius: 60%;
+  }
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.protocol-text{
+    font-family: mars thin;
+    font-size: 1.5cm;
+}
+
+.content > p{
+    font-family: 'DM Sans', sans-serif;
+    letter-spacing: 1.3rem;
+    opacity: 0.7;
+    margin-top: 30px;
+}
+
+.mainbtn-section {
+    margin-top: 53px;
+    display: flex;
+    justify-content: center;
+}
+
+.mainbtn1{
+    border-radius: 2.97px;
+    border: white solid 1px;
+    padding: 12px 20px 12px 20px;
+    margin-right: 22px;
+    font-family:'Space Grotesk', sans-serif;
+    font-weight: bolder;
+    display: flex;
+}
+
+.mainbtn2{
+    background-color: #131313;
+    border: rgba(255, 255, 255, 0.603) solid 1px;
+    border-radius: 2.97px;
+    padding: 12px 37px 12px 37px;
+    font-family:'Space Grotesk', sans-serif;
+    font-weight: bolder;
+    display: flex;
+}
+
+.component-border{
+    border: white solid 2px;
+    width: fit-content;
+    border-radius: 50px;
+    height: 3rem;
+    margin: 10rem 0 0 0;
+}
+
+.component{
+    margin: 5px;
+    background: white;
+    width: 17px;
+    height: 17px;
+    content: " ";
+    border-radius: 60%;
+    animation-name: component;
+    animation-duration:2s ;
+    animation-iteration-count: infinite;
+}
+
+.sympotext{
+    font-family: 'DM Sans', sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.329);
+    bottom:0px;
+    font-size: 19vmax;
+    text-align: center;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.ham-btn{
+    display: none;
+    margin: 0 2.5rem 0 0;
+    padding: 0 5px 0 5px;
+    background: transparent;
+    border: transparent;
+}
+
+.menu{
+    display: none;
+}
+
+
+.cross-btn{
+    background: transparent;
+    border: transparent;
+    float: right;
+    margin: 1.6rem;
+}
+
+.nav-mobile{
+    margin-left: 1rem;
+}
+
+.nav-mobile-btn{
+    font-size: large;
+    color: rgba(255, 255, 255, 0.521);
+    text-decoration: none;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.nav-mobile-active{
+    font-size: large;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+@media only screen and (max-width: 887px) {
+    .main{
+        height: 100vh;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.541),rgba(0, 0, 0, 0));
+    }
+
+    nav{
+        padding: 2rem 0 0 1.5rem;
+
+    }
+    nav > section{
+        display: none;
+    }
+
+    .content > p{
+        margin-top: 15px;
+        letter-spacing: 0.3rem;
+        font-size: small;
+    }
+
+    .mainbtn1{
+        padding: 12px 12px 12px 12px;
+        
+        margin-right: 18px;
+    }
+
+    .mainbtn2{
+        padding: 12px 30px 12px 30px;
+    }
+
+    .content-border{
+        padding-top: 10px;
+    }
+    .protocol-text{
+        font-family: mars bold;
+        font-size: 1.45rem;
+    }
+
+    .sympotext{
+        margin-top: 6rem;
+        font-size: 5.9vmax;
+    }
+
+    .ham-btn{
+        display: block;
+    }
+
+    .menu{
+        display: block;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0.4s, opacity 0.6s ease-out;
+        float: right;
+        background-color: black;
+        width: 70%;
+        position:absolute;
+        height: 100%;
+        z-index: 1;
+    }
+}
